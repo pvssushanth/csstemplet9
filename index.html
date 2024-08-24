@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img{
+        width: 50px;
+        position: relative;
+        right: 3px;
+        
+    }
+    img:hover{
+        cursor: pointer;
+    }
+    .container>.Tiffens>p{
+        background-color: blue;
+        padding: 10px;
+        width: 100px;
+        box-sizing: border-box;
+        margin-top: 5px;
+    }
+    .Tiffens>p:hover{
+        background-color: red;
+        color: white;
+    }
+    #tiffencenter{
+        display: none;
+    }
+    .Tiffens{
+        width: 400px;
+        position: absolute;
+        min-width: 100px;
+        left: 0;
+        top: 30px;
+
+        transition: transform 2s ease;
+        transform: translateX(-100%); 
+    }
+    #tiffencenter:checked~.Tiffens{
+        transform: translateX(0); 
+        
+        
+    }
+    .container{
+        position: relative;
+    }
+    
+</style>
+
+<body>
+   <div class="container">
+    <label for="tiffencenter"><img src="./ham burger.png" alt=""></label>
+    <input type="checkbox" id="tiffencenter">
+
+   <div class="Tiffens">
+    <p>Dosa</p>
+    <p>Idly</p>
+    <p>poori</p>
+    <p>upma</p>
+    </div>
+    </div>
+</body>
+</html>
